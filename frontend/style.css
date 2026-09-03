@@ -1,0 +1,171 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', system-ui, sans-serif;
+}
+
+body {
+  background: #f5f7fa;
+  color: #1f2937;
+  padding: 20px;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #2563eb;
+}
+
+.subtitle {
+  color: #6b7280;
+  margin-top: 4px;
+}
+
+main {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 12px;
+  font-size: 1.2rem;
+}
+
+form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+}
+
+.form-row {
+  display: flex;
+  gap: 10px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+button {
+  background: #2563eb;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+.list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.word-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.word-item:last-child {
+  border-bottom: none;
+}
+
+.word-main {
+  font-weight: 600;
+}
+
+.word-sub {
+  color: #6b7280;
+  font-size: 0.9rem;
+}
+
+.word-example {
+  font-style: italic;
+  color: #9ca3af;
+  font-size: 0.85rem;
+  margin-top: 2px;
+}
+
+.deck-tag {
+  display: inline-block;
+  background: #dbeafe;
+  color: #1e40af;
+  font-size: 0.75rem;
+  padding: 2px 8px;
+  border-radius: 999px;
+  margin-top: 4px;
+}
+
+.delete-btn {
+  background: #ef4444;
+  padding: 6px 10px;
+  font-size: 0.85rem;
+}
+
+.delete-btn:hover {
+  background: #dc2626;
+}
+
+.hidden {
+  display: none;
+}
+
+#quiz-content {
+  text-align: center;
+  padding: 20px 0;
+}
+
+#quiz-word {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #2563eb;
+}
+
+#quiz-answer {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1rem;
+  margin-bottom: 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.quiz-feedback {
+  margin-top: 12px;
+  font-weight: 600;
+}
+
+.quiz-feedback.correct {
+  color: #16a34a;
+}
+
+.quiz-feedback.wrong {
+  color: #dc2626;
+}

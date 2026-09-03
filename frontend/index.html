@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ESL Vocab - Học từ vựng tiếng Anh</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>📚 ESL Vocab</h1>
+    <p class="subtitle">Học từ vựng tiếng Anh mỗi ngày</p>
+  </header>
+
+  <main>
+    <!-- Add new word form -->
+    <section class="card">
+      <h2>Thêm từ mới</h2>
+      <form id="word-form">
+        <div class="form-row">
+          <input type="text" id="english" placeholder="English word" required />
+          <input type="text" id="vietnamese" placeholder="Nghĩa tiếng Việt" required />
+        </div>
+        <input type="text" id="example" placeholder="Câu ví dụ (không bắt buộc)" />
+        <input type="text" id="deck" placeholder="Chủ đề (vd: Daily conversation)" />
+        <button type="submit">Thêm từ</button>
+      </form>
+    </section>
+
+    <!-- Word list -->
+    <section class="card">
+      <div class="list-header">
+        <h2>Danh sách từ vựng</h2>
+        <button id="quiz-btn">🎯 Chế độ ôn tập</button>
+      </div>
+      <div id="word-list"></div>
+    </section>
+
+    <!-- Quiz mode -->
+    <section class="card hidden" id="quiz-section">
+      <h2>Ôn tập</h2>
+      <div id="quiz-content"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
