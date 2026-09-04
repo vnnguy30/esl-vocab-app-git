@@ -1,5 +1,20 @@
 // pages/relax.js - Hub page: pick a cat mini-game.
-// Brush and Feed are still placeholders until they're built.
+
+// A simple hairbrush icon - a rectangle handle plus a row of short bristle
+// lines. Drawn as SVG instead of an emoji (like 🪮) since brush emoji
+// support/rendering is inconsistent across browsers and operating systems.
+function brushIconSvg() {
+  return `
+    <svg viewBox="0 0 48 48" width="40" height="40" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <rect x="20" y="24" width="8" height="20" rx="4" fill="#8a5a35"/>
+      <rect x="10" y="8" width="28" height="14" rx="7" fill="#d97a3d"/>
+      <line x1="14" y1="8" x2="14" y2="2" stroke="#5b544c" stroke-width="2" stroke-linecap="round"/>
+      <line x1="20" y1="8" x2="20" y2="1" stroke="#5b544c" stroke-width="2" stroke-linecap="round"/>
+      <line x1="26" y1="8" x2="26" y2="1" stroke="#5b544c" stroke-width="2" stroke-linecap="round"/>
+      <line x1="32" y1="8" x2="32" y2="2" stroke="#5b544c" stroke-width="2" stroke-linecap="round"/>
+    </svg>
+  `;
+}
 
 async function renderRelax(container) {
   container.innerHTML = `
@@ -11,16 +26,14 @@ async function renderRelax(container) {
           <span class="home-choice-emoji">💅</span>
           <span data-i18n="relaxTrimNailsChoice"></span>
         </a>
-        <div class="home-choice-btn home-choice-btn-disabled">
-          <span class="home-choice-emoji">🧹</span>
+        <a href="#/relax/brush" class="home-choice-btn">
+          <span class="home-choice-icon">${brushIconSvg()}</span>
           <span data-i18n="relaxBrushChoice"></span>
-          <span class="home-choice-soon" data-i18n="relaxComingSoonTag"></span>
-        </div>
-        <div class="home-choice-btn home-choice-btn-disabled">
+        </a>
+        <a href="#/relax/feed" class="home-choice-btn">
           <span class="home-choice-emoji">🍽️</span>
           <span data-i18n="relaxFeedChoice"></span>
-          <span class="home-choice-soon" data-i18n="relaxComingSoonTag"></span>
-        </div>
+        </a>
       </div>
     </section>
   `;

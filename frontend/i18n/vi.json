@@ -1,12 +1,12 @@
 {
-  "appSubtitle": "Học từ vựng tiếng Anh mỗi ngày",
+  "appSubtitle": "Sổ tay từ vựng của riêng bạn",
   "addWordHeading": "Thêm từ mới",
   "englishPlaceholder": "English word",
   "vietnamesePlaceholder": "Nghĩa tiếng Việt",
   "examplePlaceholder": "Câu ví dụ (không bắt buộc)",
   "deckPlaceholder": "Chủ đề (vd: Daily conversation)",
   "addButton": "Thêm từ",
-  "wordListHeading": "Danh sách từ vựng",
+  "wordListHeading": "Những từ mình đã học",
   "quizButton": "🎯 Chế độ ôn tập",
   "quizHeading": "Ôn tập",
   "emptyList": "Chưa có từ nào. Hãy thêm từ đầu tiên!",
@@ -27,10 +27,12 @@
   "navHelp": "Trợ giúp",
 
   "dictionarySearchPlaceholder": "Tìm từ...",
+  "dictionarySubtitle": "Đây là những từ do chính bạn thêm vào và học được — không phải từ điển tra cứu.",
 
   "homeHeading": "Chào mừng trở lại!",
   "homeSubtitle": "Bạn muốn làm gì hôm nay?",
-  "homeStudyChoice": "Học từ vựng",
+  "homeStudyChoice": "Thêm từ mới",
+  "homeAddWordPrompt": "Hôm nay bạn học được từ mới nào không? Hãy viết xuống nhé",
   "homeRelaxChoice": "Thư giãn cùng mèo",
 
   "relaxHeading": "Thư giãn",
@@ -38,7 +40,6 @@
   "relaxTrimNailsChoice": "Cắt móng",
   "relaxBrushChoice": "Chải lông",
   "relaxFeedChoice": "Cho ăn",
-  "relaxComingSoonTag": "Sắp có",
 
   "settingsHeading": "Cài đặt",
 
@@ -60,5 +61,13 @@
   "trimNailsInstructions": "Nhấn vào từng móng để cắt cho mèo nhé!",
   "trimNailsDone": "🎉 Xong rồi! Móng mèo giờ đã gọn gàng.",
   "minigameBackToRelax": "← Quay lại Thư giãn",
-  "minigamePlayAgain": "Chơi lại"
+  "minigamePlayAgain": "Chơi lại",
+
+  "brushHeading": "Chải Lông Cho Mèo",
+  "brushInstructions": "Kéo chuột qua người mèo để chải lông nhé!",
+  "brushDone": "🎉 Xong rồi! Lông mèo giờ mượt mà óng ả.",
+
+  "feedHeading": "Cho Mèo Ăn",
+  "feedInstructions": "Kéo từng món ăn vào bát cho mèo nhé!",
+  "feedDone": "🎉 Xong rồi! Mèo đã no bụng và hài lòng."
 }

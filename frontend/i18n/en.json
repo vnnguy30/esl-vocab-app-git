@@ -1,12 +1,12 @@
 {
-  "appSubtitle": "Learn Vietnamese words every day",
+  "appSubtitle": "Your personal vocabulary journal",
   "addWordHeading": "Add a new word",
   "englishPlaceholder": "English word",
   "vietnamesePlaceholder": "Vietnamese meaning",
   "examplePlaceholder": "Example sentence (optional)",
   "deckPlaceholder": "Topic (e.g. Daily conversation)",
   "addButton": "Add word",
-  "wordListHeading": "Word list",
+  "wordListHeading": "Words You've Learned",
   "quizButton": "🎯 Quiz mode",
   "quizHeading": "Review",
   "emptyList": "No words yet. Add your first word!",
@@ -27,10 +27,12 @@
   "navHelp": "Help",
 
   "dictionarySearchPlaceholder": "Search words...",
+  "dictionarySubtitle": "These are words you've personally added and learned — not a searchable dictionary.",
 
   "homeHeading": "Welcome back!",
   "homeSubtitle": "What would you like to do today?",
-  "homeStudyChoice": "Study words",
+  "homeStudyChoice": "Add New Word",
+  "homeAddWordPrompt": "Did you learn a new word today? Write it down.",
   "homeRelaxChoice": "Relax with the cats",
 
   "relaxHeading": "Relax",
@@ -38,7 +40,6 @@
   "relaxTrimNailsChoice": "Trim Nails",
   "relaxBrushChoice": "Brush",
   "relaxFeedChoice": "Feed",
-  "relaxComingSoonTag": "Soon",
 
   "settingsHeading": "Settings",
 
@@ -60,5 +61,13 @@
   "trimNailsInstructions": "Click each claw to trim it!",
   "trimNailsDone": "🎉 All done! The cat's nails are nice and neat.",
   "minigameBackToRelax": "← Back to Relax",
-  "minigamePlayAgain": "Play again"
+  "minigamePlayAgain": "Play again",
+
+  "brushHeading": "Brush the Cat",
+  "brushInstructions": "Drag across the cat to brush its fur!",
+  "brushDone": "🎉 All done! The cat's fur is soft and shiny.",
+
+  "feedHeading": "Feed the Cat",
+  "feedInstructions": "Drag each food item into the bowl!",
+  "feedDone": "🎉 All done! The cat is full and happy."
 }

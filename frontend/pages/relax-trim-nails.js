@@ -1,8 +1,8 @@
 // pages/relax-trim-nails.js - Trim Nails mini-game.
-// Click each of the cat's 5 claws to trim it. The cat's mood improves as
-// more claws are done; finishing all 5 shows a happy "Done!" state.
+// Click each of the cat's 6 claws to trim it. The cat's mood improves as
+// more claws are done; finishing all 6 shows a happy "Done!" state.
 
-const TRIM_NAILS_CLAW_COUNT = 5;
+const TRIM_NAILS_CLAW_COUNT = 6;
 
 let trimmedClaws = new Set();
 
@@ -97,11 +97,16 @@ function trimNailsCatSvg() {
         <text class="claw-check" x="86" y="151" text-anchor="middle">✓</text>
       </g>
       <g class="claw" data-claw="4">
-        <circle class="claw-hit-area" cx="116" cy="151" r="14"/>
-        <polygon class="claw-shape" points="112,158 120,158 116,144" fill="#f6f2ea" stroke="#c9c6c0" stroke-width="1"/>
-        <text class="claw-check" x="116" y="151" text-anchor="middle">✓</text>
+        <circle class="claw-hit-area" cx="114" cy="151" r="14"/>
+        <polygon class="claw-shape" points="110,158 118,158 114,144" fill="#f6f2ea" stroke="#c9c6c0" stroke-width="1"/>
+        <text class="claw-check" x="114" y="151" text-anchor="middle">✓</text>
       </g>
       <g class="claw" data-claw="5">
+        <circle class="claw-hit-area" cx="130" cy="145" r="14"/>
+        <polygon class="claw-shape" points="125,154 135,154 130,136" fill="#f6f2ea" stroke="#c9c6c0" stroke-width="1"/>
+        <text class="claw-check" x="130" y="148" text-anchor="middle">✓</text>
+      </g>
+      <g class="claw" data-claw="6">
         <circle class="claw-hit-area" cx="146" cy="151" r="14"/>
         <polygon class="claw-shape" points="142,158 150,158 146,144" fill="#f6f2ea" stroke="#c9c6c0" stroke-width="1"/>
         <text class="claw-check" x="146" y="151" text-anchor="middle">✓</text>

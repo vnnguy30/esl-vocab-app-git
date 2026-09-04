@@ -20,6 +20,7 @@ async function renderDictionary(container) {
 
     <section class="card">
       <h2 data-i18n="wordListHeading"></h2>
+      <p class="subtitle" data-i18n="dictionarySubtitle"></p>
       <input type="text" id="dictionary-search" data-i18n-placeholder="dictionarySearchPlaceholder" />
       <div id="dictionary-list"></div>
     </section>
