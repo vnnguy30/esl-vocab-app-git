@@ -1,0 +1,23 @@
+{
+  "appSubtitle": "Học từ vựng tiếng Anh mỗi ngày",
+  "addWordHeading": "Thêm từ mới",
+  "englishPlaceholder": "English word",
+  "vietnamesePlaceholder": "Nghĩa tiếng Việt",
+  "examplePlaceholder": "Câu ví dụ (không bắt buộc)",
+  "deckPlaceholder": "Chủ đề (vd: Daily conversation)",
+  "addButton": "Thêm từ",
+  "wordListHeading": "Danh sách từ vựng",
+  "quizButton": "🎯 Chế độ ôn tập",
+  "quizHeading": "Ôn tập",
+  "emptyList": "Chưa có từ nào. Hãy thêm từ đầu tiên!",
+  "deleteButton": "Xóa",
+  "quizPlaceholder": "Nhập nghĩa tiếng Việt...",
+  "quizSubmit": "Kiểm tra",
+  "quizCorrect": "✅ Chính xác!",
+  "quizWrongPrefix": "❌ Sai rồi. Đáp án đúng: ",
+  "quizDone": "🎉 Bạn đã ôn tập hết! Nhấn \"Chế độ ôn tập\" để bắt đầu lại.",
+  "quizAlertEmpty": "Hãy thêm ít nhất 1 từ trước khi ôn tập!",
+  "learningDirectionLabel": "Tôi đang học:",
+  "learningEnglish": "Tiếng Anh",
+  "learningVietnamese": "Tiếng Việt"
+}

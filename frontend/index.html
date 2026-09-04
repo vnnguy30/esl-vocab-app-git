@@ -3,46 +3,55 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ESL Vocab - Học từ vựng tiếng Anh</title>
+  <title>ESL Vocab</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <header>
     <h1>📚 ESL Vocab</h1>
-    <p class="subtitle">Học từ vựng tiếng Anh mỗi ngày</p>
+    <p class="subtitle" data-i18n="appSubtitle"></p>
+
+    <div class="lang-switch">
+      <label for="learning-direction" data-i18n="learningDirectionLabel"></label>
+      <select id="learning-direction">
+        <option value="learn_en" data-i18n="learningEnglish"></option>
+        <option value="learn_vi" data-i18n="learningVietnamese"></option>
+      </select>
+    </div>
   </header>
 
   <main>
     <!-- Add new word form -->
     <section class="card">
-      <h2>Thêm từ mới</h2>
+      <h2 data-i18n="addWordHeading"></h2>
       <form id="word-form">
         <div class="form-row">
-          <input type="text" id="english" placeholder="English word" required />
-          <input type="text" id="vietnamese" placeholder="Nghĩa tiếng Việt" required />
+          <input type="text" id="english" data-i18n-placeholder="englishPlaceholder" required />
+          <input type="text" id="vietnamese" data-i18n-placeholder="vietnamesePlaceholder" required />
         </div>
-        <input type="text" id="example" placeholder="Câu ví dụ (không bắt buộc)" />
-        <input type="text" id="deck" placeholder="Chủ đề (vd: Daily conversation)" />
-        <button type="submit">Thêm từ</button>
+        <input type="text" id="example" data-i18n-placeholder="examplePlaceholder" />
+        <input type="text" id="deck" data-i18n-placeholder="deckPlaceholder" />
+        <button type="submit" data-i18n="addButton"></button>
       </form>
     </section>
 
     <!-- Word list -->
     <section class="card">
       <div class="list-header">
-        <h2>Danh sách từ vựng</h2>
-        <button id="quiz-btn">🎯 Chế độ ôn tập</button>
+        <h2 data-i18n="wordListHeading"></h2>
+        <button id="quiz-btn" data-i18n="quizButton"></button>
       </div>
       <div id="word-list"></div>
     </section>
 
     <!-- Quiz mode -->
     <section class="card hidden" id="quiz-section">
-      <h2>Ôn tập</h2>
+      <h2 data-i18n="quizHeading"></h2>
       <div id="quiz-content"></div>
     </section>
   </main>
 
+  <script src="i18n.js"></script>
   <script src="script.js"></script>
 </body>
 </html>

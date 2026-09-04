@@ -1,3 +1,23 @@
+:root {
+  --bg: #f2e8d5;
+  --card-bg: #fffaf0;
+  --text: #4a3f35;
+  --text-muted: #8a7a68;
+  --border: #e3d5b8;
+
+  --accent: #d97a3d;
+  --accent-hover: #c2652a;
+
+  --tag-bg: #f4dfc0;
+  --tag-text: #92600f;
+
+  --danger: #c0533a;
+  --danger-hover: #a6432c;
+
+  --correct: #4d7c4d;
+  --wrong: #c0533a;
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -6,8 +26,8 @@
 }
 
 body {
-  background: #f5f7fa;
-  color: #1f2937;
+  background: var(--bg);
+  color: var(--text);
   padding: 20px;
 }
 
@@ -18,12 +38,30 @@ header {
 
 header h1 {
   font-size: 2rem;
-  color: #2563eb;
+  color: var(--accent);
 }
 
 .subtitle {
-  color: #6b7280;
+  color: var(--text-muted);
   margin-top: 4px;
+}
+
+.lang-switch {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.lang-switch select {
+  padding: 4px 8px;
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 0.85rem;
 }
 
 main {
@@ -32,25 +70,29 @@ main {
 }
 
 .card {
-  background: white;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  box-shadow: 0 1px 3px rgba(74, 63, 53, 0.08);
 }
 
 .card h2 {
   margin-bottom: 12px;
   font-size: 1.2rem;
+  color: var(--text);
 }
 
 form input {
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border);
   border-radius: 8px;
   font-size: 1rem;
+  background: var(--card-bg);
+  color: var(--text);
 }
 
 .form-row {
@@ -63,7 +105,7 @@ form input {
 }
 
 button {
-  background: #2563eb;
+  background: var(--accent);
   color: white;
   border: none;
   padding: 10px 16px;
@@ -73,7 +115,7 @@ button {
 }
 
 button:hover {
-  background: #1d4ed8;
+  background: var(--accent-hover);
 }
 
 .list-header {
@@ -88,7 +130,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 12px;
-  border-bottom: 1px solid #e5e7eb;
+  border-bottom: 1px solid var(--border);
 }
 
 .word-item:last-child {
@@ -100,21 +142,25 @@ button:hover {
 }
 
 .word-sub {
-  color: #6b7280;
+  color: var(--text-muted);
   font-size: 0.9rem;
+}
+
+.empty-message {
+  color: var(--text-muted);
 }
 
 .word-example {
   font-style: italic;
-  color: #9ca3af;
+  color: var(--text-muted);
   font-size: 0.85rem;
   margin-top: 2px;
 }
 
 .deck-tag {
   display: inline-block;
-  background: #dbeafe;
-  color: #1e40af;
+  background: var(--tag-bg);
+  color: var(--tag-text);
   font-size: 0.75rem;
   padding: 2px 8px;
   border-radius: 999px;
@@ -122,13 +168,13 @@ button:hover {
 }
 
 .delete-btn {
-  background: #ef4444;
+  background: var(--danger);
   padding: 6px 10px;
   font-size: 0.85rem;
 }
 
 .delete-btn:hover {
-  background: #dc2626;
+  background: var(--danger-hover);
 }
 
 .hidden {
@@ -144,7 +190,7 @@ button:hover {
   font-size: 1.8rem;
   font-weight: bold;
   margin-bottom: 16px;
-  color: #2563eb;
+  color: var(--accent);
 }
 
 #quiz-answer {
@@ -152,9 +198,11 @@ button:hover {
   padding: 12px;
   font-size: 1.1rem;
   margin-bottom: 12px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--border);
   border-radius: 8px;
   text-align: center;
+  background: var(--card-bg);
+  color: var(--text);
 }
 
 .quiz-feedback {
@@ -163,9 +211,9 @@ button:hover {
 }
 
 .quiz-feedback.correct {
-  color: #16a34a;
+  color: var(--correct);
 }
 
 .quiz-feedback.wrong {
-  color: #dc2626;
+  color: var(--wrong);
 }

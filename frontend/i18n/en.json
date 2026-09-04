@@ -1,0 +1,23 @@
+{
+  "appSubtitle": "Learn Vietnamese words every day",
+  "addWordHeading": "Add a new word",
+  "englishPlaceholder": "English word",
+  "vietnamesePlaceholder": "Vietnamese meaning",
+  "examplePlaceholder": "Example sentence (optional)",
+  "deckPlaceholder": "Topic (e.g. Daily conversation)",
+  "addButton": "Add word",
+  "wordListHeading": "Word list",
+  "quizButton": "🎯 Quiz mode",
+  "quizHeading": "Review",
+  "emptyList": "No words yet. Add your first word!",
+  "deleteButton": "Delete",
+  "quizPlaceholder": "Type the Vietnamese meaning...",
+  "quizSubmit": "Check",
+  "quizCorrect": "✅ Correct!",
+  "quizWrongPrefix": "❌ Not quite. Correct answer: ",
+  "quizDone": "🎉 You've reviewed everything! Click \"Quiz mode\" to start again.",
+  "quizAlertEmpty": "Add at least 1 word before starting the quiz!",
+  "learningDirectionLabel": "I'm learning:",
+  "learningEnglish": "English",
+  "learningVietnamese": "Vietnamese"
+}

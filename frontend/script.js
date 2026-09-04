@@ -21,7 +21,7 @@ async function loadWords() {
 
 function renderWords() {
   if (allWords.length === 0) {
-    wordList.innerHTML = '<p style="color:#9ca3af;">Chưa có từ nào. Hãy thêm từ đầu tiên!</p>';
+    wordList.innerHTML = `<p class="empty-message">${t('emptyList')}</p>`;
     return;
   }
 
@@ -32,7 +32,7 @@ function renderWords() {
         ${word.example_sentence ? `<div class="word-example">"${escapeHtml(word.example_sentence)}"</div>` : ''}
         <span class="deck-tag">${escapeHtml(word.deck)}</span>
       </div>
-      <button class="delete-btn" data-id="${word.id}">Xóa</button>
+      <button class="delete-btn" data-id="${word.id}">${t('deleteButton')}</button>
     </div>
   `).join('');
 
@@ -76,7 +76,7 @@ async function deleteWord(id) {
 // Quiz mode
 quizBtn.addEventListener('click', () => {
   if (allWords.length === 0) {
-    alert('Hãy thêm ít nhất 1 từ trước khi ôn tập!');
+    alert(t('quizAlertEmpty'));
     return;
   }
   quizSection.classList.toggle('hidden');
@@ -92,15 +92,15 @@ function startQuiz() {
 
 function nextQuizQuestion() {
   if (quizQueue.length === 0) {
-    quizContent.innerHTML = '<p>🎉 Bạn đã ôn tập hết! Nhấn "Chế độ ôn tập" để bắt đầu lại.</p>';
+    quizContent.innerHTML = `<p>${t('quizDone')}</p>`;
     return;
   }
 
   currentQuizWord = quizQueue.pop();
   quizContent.innerHTML = `
     <div id="quiz-word">${escapeHtml(currentQuizWord.english)}</div>
-    <input type="text" id="quiz-answer" placeholder="Nhập nghĩa tiếng Việt..." autocomplete="off" />
-    <button id="quiz-submit">Kiểm tra</button>
+    <input type="text" id="quiz-answer" placeholder="${t('quizPlaceholder')}" autocomplete="off" />
+    <button id="quiz-submit">${t('quizSubmit')}</button>
     <div id="quiz-feedback" class="quiz-feedback"></div>
   `;
 
@@ -116,15 +116,29 @@ function checkAnswer() {
   const feedback = document.getElementById('quiz-feedback');
 
   if (input === correct) {
-    feedback.textContent = '✅ Chính xác!';
+    feedback.textContent = t('quizCorrect');
     feedback.className = 'quiz-feedback correct';
   } else {
-    feedback.textContent = `❌ Sai rồi. Đáp án đúng: ${currentQuizWord.vietnamese}`;
+    feedback.textContent = `${t('quizWrongPrefix')}${currentQuizWord.vietnamese}`;
     feedback.className = 'quiz-feedback wrong';
   }
 
   setTimeout(nextQuizQuestion, 1500);
 }
 
-// Initial load
-loadWords();
+// Called by i18n.js after the user switches "I'm learning..." direction,
+// so any already-rendered dynamic text (word list, quiz) updates too.
+function onLanguageChanged() {
+  renderWords();
+  if (!quizSection.classList.contains('hidden')) {
+    startQuiz();
+  }
+}
+
+// Initial load: wait for the UI language to be ready before rendering
+// anything that uses t(), then fetch the word list.
+async function init() {
+  await initI18n();
+  await loadWords();
+}
+init();
