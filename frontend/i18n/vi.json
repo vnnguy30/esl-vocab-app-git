@@ -11,12 +11,10 @@
   "quizHeading": "Ôn tập",
   "emptyList": "Chưa có từ nào. Hãy thêm từ đầu tiên!",
   "deleteButton": "Xóa",
-  "quizPlaceholder": "Nhập nghĩa tiếng Việt...",
-  "quizSubmit": "Kiểm tra",
   "quizCorrect": "✅ Chính xác!",
   "quizWrongPrefix": "❌ Sai rồi. Đáp án đúng: ",
   "quizDone": "🎉 Bạn đã ôn tập hết! Nhấn \"Chế độ ôn tập\" để bắt đầu lại.",
-  "quizAlertEmpty": "Hãy thêm ít nhất 1 từ trước khi ôn tập!",
+  "quizAlertEmpty": "Hãy thêm ít nhất 2 từ trước khi ôn tập!",
   "learningDirectionLabel": "Tôi đang học:",
   "learningEnglish": "Tiếng Anh",
   "learningVietnamese": "Tiếng Việt",
@@ -36,13 +34,31 @@
   "homeRelaxChoice": "Thư giãn cùng mèo",
 
   "relaxHeading": "Thư giãn",
-  "relaxComingSoon": "Các trò chơi với mèo (chải lông, cho ăn, cắt móng) sẽ sớm xuất hiện ở đây!",
+  "relaxSubtitle": "Chọn một trò chơi để thư giãn cùng mèo!",
+  "relaxTrimNailsChoice": "Cắt móng",
+  "relaxBrushChoice": "Chải lông",
+  "relaxFeedChoice": "Cho ăn",
+  "relaxComingSoonTag": "Sắp có",
 
   "settingsHeading": "Cài đặt",
 
   "helpHeading": "Trợ giúp & Hỗ trợ",
   "helpIntro": "Có câu hỏi hoặc gặp sự cố? Nội dung trợ giúp sẽ sớm được cập nhật tại đây.",
 
-  "quizStartPrompt": "Nhấn nút bên trên để bắt đầu ôn tập."
-}
+  "quizStartPrompt": "Nhấn nút bên trên để bắt đầu ôn tập.",
 
+  "studyTabQuiz": "Trắc nghiệm",
+  "studyTabFlashcards": "Flashcard",
+  "flashcardShowAnswer": "Hiện đáp án",
+  "flashcardHideAnswer": "Ẩn đáp án",
+  "flashcardPrev": "Trước",
+  "flashcardNext": "Tiếp",
+  "flashcardAlertEmpty": "Hãy thêm ít nhất 1 từ để xem flashcard!",
+  "flashcardVoiceUnavailable": "🔇 Giọng đọc chưa khả dụng trên trình duyệt này",
+
+  "trimNailsHeading": "Cắt Móng Cho Mèo",
+  "trimNailsInstructions": "Nhấn vào từng móng để cắt cho mèo nhé!",
+  "trimNailsDone": "🎉 Xong rồi! Móng mèo giờ đã gọn gàng.",
+  "minigameBackToRelax": "← Quay lại Thư giãn",
+  "minigamePlayAgain": "Chơi lại"
+}

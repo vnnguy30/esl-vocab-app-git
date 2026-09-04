@@ -11,12 +11,10 @@
   "quizHeading": "Review",
   "emptyList": "No words yet. Add your first word!",
   "deleteButton": "Delete",
-  "quizPlaceholder": "Type the Vietnamese meaning...",
-  "quizSubmit": "Check",
   "quizCorrect": "✅ Correct!",
   "quizWrongPrefix": "❌ Not quite. Correct answer: ",
   "quizDone": "🎉 You've reviewed everything! Click \"Quiz mode\" to start again.",
-  "quizAlertEmpty": "Add at least 1 word before starting the quiz!",
+  "quizAlertEmpty": "Add at least 2 words before starting the quiz!",
   "learningDirectionLabel": "I'm learning:",
   "learningEnglish": "English",
   "learningVietnamese": "Vietnamese",
@@ -36,12 +34,31 @@
   "homeRelaxChoice": "Relax with the cats",
 
   "relaxHeading": "Relax",
-  "relaxComingSoon": "Cat mini-games (brushing, feeding, nail trimming) are coming soon!",
+  "relaxSubtitle": "Pick a game to relax with the cats!",
+  "relaxTrimNailsChoice": "Trim Nails",
+  "relaxBrushChoice": "Brush",
+  "relaxFeedChoice": "Feed",
+  "relaxComingSoonTag": "Soon",
 
   "settingsHeading": "Settings",
 
   "helpHeading": "Help & Support",
   "helpIntro": "Have a question or ran into an issue? Help content will be added here soon.",
 
-  "quizStartPrompt": "Click the button above to start the quiz."
+  "quizStartPrompt": "Click the button above to start the quiz.",
+
+  "studyTabQuiz": "Quiz",
+  "studyTabFlashcards": "Flashcards",
+  "flashcardShowAnswer": "Show answer",
+  "flashcardHideAnswer": "Hide answer",
+  "flashcardPrev": "Prev",
+  "flashcardNext": "Next",
+  "flashcardAlertEmpty": "Add at least 1 word to view flashcards!",
+  "flashcardVoiceUnavailable": "🔇 Voice not available in this browser",
+
+  "trimNailsHeading": "Trim the Cat's Nails",
+  "trimNailsInstructions": "Click each claw to trim it!",
+  "trimNailsDone": "🎉 All done! The cat's nails are nice and neat.",
+  "minigameBackToRelax": "← Back to Relax",
+  "minigamePlayAgain": "Play again"
 }
