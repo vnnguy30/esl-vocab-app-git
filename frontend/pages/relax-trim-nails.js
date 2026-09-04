@@ -143,7 +143,7 @@ function trimNailsCatSvg() {
 
       <!-- mouths: one shown per mood -->
       <g class="mouth-annoyed">
-        <path d="M84,86 Q90,80 96,84 M116,86 Q110,80 104,84" stroke="#5b544c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
+        <path d="M82,88 Q100,76 118,88" stroke="#5b544c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
       </g>
       <g class="mouth-relaxed">
         <path d="M100,82 Q90,90 82,84 M100,82 Q110,90 118,84" stroke="#5b544c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
