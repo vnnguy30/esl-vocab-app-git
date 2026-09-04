@@ -89,12 +89,10 @@ The backend must already be running (step above) for the frontend to fetch data.
 
 ### Next steps to keep learning
 
-1. **Cat mascot system:** two companion cats that animate on correct quiz answers, and open a Settings/Help menu when clicked
-2. **Cat mini-games on the Relax page:** brushing, feeding, nail trimming (currently just a placeholder)
-3. **Flashcards with audio on the Study page:** use the Web Speech API (`speechSynthesis`) to read English words aloud
-4. **Add login (auth):** use AWS Cognito + DynamoDB so each user has their own word list
-5. **Deploy to the internet:** backend to Render/Railway, frontend to Vercel/Netlify
-6. **Rewrite the frontend in React:** once comfortable with vanilla JS, try rebuilding it in React to learn component-based thinking
+1. **Cat mini-games on the Relax page:** brushing, feeding, nail trimming (currently just a placeholder)
+2. **Add login (auth):** use AWS Cognito + DynamoDB so each user has their own word list
+3. **Deploy to the internet:** backend to Render/Railway, frontend to Vercel/Netlify
+4. **Rewrite the frontend in React:** once comfortable with vanilla JS, try rebuilding it in React to learn component-based thinking
 
 ### Troubleshooting
 
@@ -193,12 +191,10 @@ Backend phải đang chạy (bước trên) thì frontend mới lấy được d
 
 ### Bước tiếp theo để học thêm
 
-1. **Hệ thống mèo linh vật:** hai mèo đồng hành, chơi hoạt ảnh khi trả lời đúng câu quiz, và mở menu Cài đặt/Trợ giúp khi được nhấn vào
-2. **Mini-game với mèo ở trang Thư giãn:** chải lông, cho ăn, cắt móng (hiện tại chỉ là placeholder)
-3. **Flashcard có âm thanh ở trang Học:** dùng Web Speech API (`speechSynthesis`) để đọc từ tiếng Anh
-4. **Thêm đăng nhập (auth):** dùng AWS Cognito + DynamoDB để mỗi người dùng có danh sách từ riêng
-5. **Deploy lên internet:** backend lên Render/Railway, frontend lên Vercel/Netlify
-6. **Chuyển frontend sang React:** khi đã quen với JS thuần, thử viết lại bằng React để học component-based thinking
+1. **Mini-game với mèo ở trang Thư giãn:** chải lông, cho ăn, cắt móng (hiện tại chỉ là placeholder)
+2. **Thêm đăng nhập (auth):** dùng AWS Cognito + DynamoDB để mỗi người dùng có danh sách từ riêng
+3. **Deploy lên internet:** backend lên Render/Railway, frontend lên Vercel/Netlify
+4. **Chuyển frontend sang React:** khi đã quen với JS thuần, thử viết lại bằng React để học component-based thinking
 
 ### Nếu gặp lỗi
 

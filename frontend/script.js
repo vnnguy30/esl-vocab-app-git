@@ -8,6 +8,7 @@ async function init() {
   registerRoute('/study', renderStudy);
   registerRoute('/dictionary', renderDictionary);
   registerRoute('/relax', renderRelax);
+  registerRoute('/relax/trim-nails', renderTrimNails);
   registerRoute('/settings', renderSettings);
   registerRoute('/help', renderHelp);
 

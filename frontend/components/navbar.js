@@ -15,11 +15,15 @@ function renderNavbar(activePath) {
   const nav = document.getElementById('navbar');
   if (!nav) return;
 
-  nav.innerHTML = NAV_ITEMS.map(item => `
-    <a href="#${item.path}" class="nav-link${item.path === activePath ? ' active' : ''}">
-      ${t(item.labelKey)}
-    </a>
-  `).join('');
+  nav.innerHTML = NAV_ITEMS.map(item => {
+    // Sub-pages like "/relax/trim-nails" should still highlight "Relax".
+    const isActive = activePath === item.path || activePath.startsWith(item.path + '/');
+    return `
+      <a href="#${item.path}" class="nav-link${isActive ? ' active' : ''}">
+        ${t(item.labelKey)}
+      </a>
+    `;
+  }).join('');
 }
 
 function onRouteChanged(path) {

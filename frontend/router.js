@@ -29,6 +29,10 @@ async function renderRoute() {
     currentCleanup = null;
   }
 
+  // A cat popup menu (components/cats.js) should never survive a page
+  // change - close it here so its "click outside" listener can't leak.
+  if (typeof closeAllCatMenus === 'function') closeAllCatMenus();
+
   const path = getCurrentPath();
   const page = routes[path] || routes['/home'];
   const app = document.getElementById('app');

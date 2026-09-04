@@ -1,5 +1,4 @@
-// pages/home.js - Welcome screen: Study / Relax choice.
-// Cat mascots will be added here once the cat mascot system is built.
+// pages/home.js - Welcome screen: Study / Relax choice, plus the cat mascots.
 
 async function renderHome(container) {
   container.innerHTML = `
@@ -17,6 +16,8 @@ async function renderHome(container) {
         </a>
       </div>
     </section>
+    <div id="cat-mascots"></div>
   `;
   applyTranslations();
+  renderCatMascots(document.getElementById('cat-mascots'));
 }
