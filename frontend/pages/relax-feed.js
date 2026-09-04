@@ -62,7 +62,14 @@ function makeFoodDraggable(itemEl, bowlEl) {
     startX = e.clientX;
     startY = e.clientY;
     itemEl.classList.add('dragging');
-    itemEl.setPointerCapture(e.pointerId);
+    // Capture is best-effort: it just makes fast drags outside the item's
+    // bounds keep tracking smoothly. Some browsers/automation can reject it
+    // (NotFoundError) even though dragging itself works fine without it.
+    try {
+      itemEl.setPointerCapture(e.pointerId);
+    } catch (err) {
+      // ignore - dragging still works via the pointermove listener below
+    }
   });
 
   itemEl.addEventListener('pointermove', (e) => {
@@ -182,7 +189,7 @@ function feedCatSvg() {
 
       <!-- mouths: one shown per fullness tier -->
       <g class="mouth-hungry">
-        <ellipse cx="100" cy="86" rx="7" ry="6" fill="#5b544c"/>
+        <circle cx="100" cy="85" r="5" fill="none" stroke="#5b544c" stroke-width="2"/>
       </g>
       <g class="mouth-content">
         <path d="M100,82 Q90,90 82,84 M100,82 Q110,90 118,84" stroke="#5b544c" stroke-width="2.4" fill="none" stroke-linecap="round"/>
