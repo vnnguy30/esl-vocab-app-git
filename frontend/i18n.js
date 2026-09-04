@@ -49,22 +49,20 @@ function applyTranslations() {
   });
 }
 
-// Wires up the "I'm learning..." dropdown and loads the matching UI language.
-// script.js calls this once on startup, then awaits it before rendering
-// anything that uses t() (like the word list).
+// Loads the UI language that matches the saved learning direction.
+// script.js calls this once on startup, before the router renders any page.
+// The "I'm learning..." dropdown itself lives on the Settings page
+// (pages/settings.js), which calls setLearningDirection() when it changes.
 async function initI18n() {
   const direction = getLearningDirection();
-  const select = document.getElementById('learning-direction');
-
-  if (select) {
-    select.value = direction;
-    select.addEventListener('change', async () => {
-      localStorage.setItem(LEARNING_DIRECTION_KEY, select.value);
-      await loadLanguage(directionToUiLang(select.value));
-      // Re-render anything with dynamic, JS-generated text (word list, quiz).
-      if (typeof onLanguageChanged === 'function') onLanguageChanged();
-    });
-  }
-
   await loadLanguage(directionToUiLang(direction));
+}
+
+// Called by pages/settings.js when the user changes learning direction.
+async function setLearningDirection(direction) {
+  localStorage.setItem(LEARNING_DIRECTION_KEY, direction);
+  await loadLanguage(directionToUiLang(direction));
+  // Re-render the navbar and whichever page is currently showing, so
+  // already-rendered dynamic text (word list, quiz, nav labels) updates too.
+  if (typeof renderRoute === 'function') renderRoute();
 }

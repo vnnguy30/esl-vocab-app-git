@@ -19,5 +19,29 @@
   "quizAlertEmpty": "Hãy thêm ít nhất 1 từ trước khi ôn tập!",
   "learningDirectionLabel": "Tôi đang học:",
   "learningEnglish": "Tiếng Anh",
-  "learningVietnamese": "Tiếng Việt"
+  "learningVietnamese": "Tiếng Việt",
+
+  "navHome": "Trang chủ",
+  "navStudy": "Học",
+  "navDictionary": "Từ điển",
+  "navRelax": "Thư giãn",
+  "navSettings": "Cài đặt",
+  "navHelp": "Trợ giúp",
+
+  "dictionarySearchPlaceholder": "Tìm từ...",
+
+  "homeHeading": "Chào mừng trở lại!",
+  "homeSubtitle": "Bạn muốn làm gì hôm nay?",
+  "homeStudyChoice": "Học từ vựng",
+  "homeRelaxChoice": "Thư giãn cùng mèo",
+
+  "relaxHeading": "Thư giãn",
+  "relaxComingSoon": "Các trò chơi với mèo (chải lông, cho ăn, cắt móng) sẽ sớm xuất hiện ở đây!",
+
+  "settingsHeading": "Cài đặt",
+
+  "helpHeading": "Trợ giúp & Hỗ trợ",
+  "helpIntro": "Có câu hỏi hoặc gặp sự cố? Nội dung trợ giúp sẽ sớm được cập nhật tại đây.",
+
+  "quizStartPrompt": "Nhấn nút bên trên để bắt đầu ôn tập."
 }

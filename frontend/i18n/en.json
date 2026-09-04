@@ -19,5 +19,29 @@
   "quizAlertEmpty": "Add at least 1 word before starting the quiz!",
   "learningDirectionLabel": "I'm learning:",
   "learningEnglish": "English",
-  "learningVietnamese": "Vietnamese"
+  "learningVietnamese": "Vietnamese",
+
+  "navHome": "Home",
+  "navStudy": "Study",
+  "navDictionary": "Dictionary",
+  "navRelax": "Relax",
+  "navSettings": "Settings",
+  "navHelp": "Help",
+
+  "dictionarySearchPlaceholder": "Search words...",
+
+  "homeHeading": "Welcome back!",
+  "homeSubtitle": "What would you like to do today?",
+  "homeStudyChoice": "Study words",
+  "homeRelaxChoice": "Relax with the cats",
+
+  "relaxHeading": "Relax",
+  "relaxComingSoon": "Cat mini-games (brushing, feeding, nail trimming) are coming soon!",
+
+  "settingsHeading": "Settings",
+
+  "helpHeading": "Help & Support",
+  "helpIntro": "Have a question or ran into an issue? Help content will be added here soon.",
+
+  "quizStartPrompt": "Click the button above to start the quiz."
 }

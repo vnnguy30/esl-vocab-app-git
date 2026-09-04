@@ -28,12 +28,11 @@
 body {
   background: var(--bg);
   color: var(--text);
-  padding: 20px;
 }
 
 header {
   text-align: center;
-  margin-bottom: 24px;
+  padding: 20px 20px 16px;
 }
 
 header h1 {
@@ -46,27 +45,43 @@ header h1 {
   margin-top: 4px;
 }
 
-.lang-switch {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  margin-top: 12px;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  background: var(--card-bg);
+  border-top: 1px solid var(--border);
+  border-bottom: 1px solid var(--border);
+  padding: 10px 16px;
+  position: sticky;
+  top: 0;
+  z-index: 10;
 }
 
-.lang-switch select {
-  padding: 4px 8px;
-  border: 1px solid var(--border);
-  border-radius: 6px;
-  background: var(--card-bg);
+.nav-link {
+  color: var(--text-muted);
+  text-decoration: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.nav-link:hover {
+  background: var(--tag-bg);
   color: var(--text);
-  font-size: 0.85rem;
+}
+
+.nav-link.active {
+  background: var(--accent);
+  color: white;
 }
 
 main {
   max-width: 600px;
   margin: 0 auto;
+  padding: 20px;
 }
 
 .card {
@@ -177,10 +192,6 @@ button:hover {
   background: var(--danger-hover);
 }
 
-.hidden {
-  display: none;
-}
-
 #quiz-content {
   text-align: center;
   padding: 20px 0;
@@ -216,4 +227,61 @@ button:hover {
 
 .quiz-feedback.wrong {
   color: var(--wrong);
+}
+
+.home-card {
+  text-align: center;
+}
+
+.home-card p {
+  color: var(--text-muted);
+  margin-top: 4px;
+}
+
+.home-choices {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+.home-choice-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 140px;
+  background: var(--tag-bg);
+  color: var(--text);
+  text-decoration: none;
+  font-weight: 600;
+  padding: 24px 32px;
+  border-radius: 16px;
+  transition: transform 0.15s ease, background 0.15s ease, color 0.15s ease;
+}
+
+.home-choice-btn:hover {
+  background: var(--accent);
+  color: white;
+  transform: translateY(-2px);
+}
+
+.home-choice-emoji {
+  font-size: 2.5rem;
+}
+
+.settings-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.settings-row select {
+  padding: 6px 10px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--card-bg);
+  color: var(--text);
+  font-size: 1rem;
 }
