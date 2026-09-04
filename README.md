@@ -1,3 +1,7 @@
+# ESL Vocab App
+
+🇻🇳 [Tiếng Việt](#tiếng-việt) | 🇬🇧 [English](#english)
+
 ## English
 
 This is a starter project for learning web dev: Frontend (HTML/CSS/JS) + Backend (Node.js/Express) + Database (SQLite).
@@ -84,13 +88,6 @@ The backend must already be running (step above) for the frontend to fetch data.
 - **CORS error** → make sure the backend has `app.use(cors())` (already included in server.js)
 - **UI text doesn't switch language, or shows raw keys instead of text** → make sure you're running the frontend through a local server (`npx serve .`), not opening `index.html` directly
 
-
-
----
-
-# ESL Vocab App
-
-🇻🇳 [Tiếng Việt](#tiếng-việt) | 🇬🇧 [English](#english)
 
 ---
 
